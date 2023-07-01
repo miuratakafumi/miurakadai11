@@ -19,7 +19,7 @@ class ViewController: UIViewController, PrefecturesViewControllerDelegate {
     
     // 画面遷移の準備
     @IBAction func selectButton(_ sender: Any) {
-        self.performSegue(withIdentifier: "toPrefectureViewController", sender: self)
+        performSegue(withIdentifier: "toPrefectureViewController", sender: self)
     }
     
     // デリゲートの設定
@@ -34,7 +34,7 @@ class ViewController: UIViewController, PrefecturesViewControllerDelegate {
 
     // 都道府県名をラベルに表示
     func didSelectPrefectures(_ prefecture: String) {
-            textLabel.text = prefecture
+        textLabel.text = prefecture
     }
     
     //  戻るボタンの設定
